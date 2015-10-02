@@ -17,8 +17,7 @@ module.exports = factory(function (fn, settings) {
     function executor(resolve, reject) {
 
         var start = now();
-
-        var originalPromise = fn()
+        var originalPromise = fn();
 
         originalPromise.then(function(result){
             resolve({
