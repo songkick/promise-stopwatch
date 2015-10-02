@@ -1,0 +1,26 @@
+{
+  "name": "promise-stopwatch",
+  "version": "0.0.0",
+  "description": "Mesure a Promise resolution duration using Performance API with fallback to `new Data()`",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test.js --cov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/songkick/promise-stopwatch.git"
+  },
+  "keywords": [
+    "promise",
+    "stopwatch"
+  ],
+  "author": "Arnaud Rinquin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/songkick/promise-stopwatch/issues"
+  },
+  "homepage": "https://github.com/songkick/promise-stopwatch#readme",
+  "devDependencies": {
+    "tap": "^1.4.1"
+  }
+}
