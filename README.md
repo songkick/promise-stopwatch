@@ -1,4 +1,4 @@
-# promise-stopwatch [![Build Status](https://travis-ci.org/songkick/promise-stopwatch.svg)](https://travis-ci.org/songkick/promise-stopwatch)
+# promise-stopwatch [![Build Status](https://travis-ci.org/songkick/promise-stopwatch.svg)](https://travis-ci.org/songkick/promise-stopwatch) [![Code Climate](https://codeclimate.com/github/songkick/promise-stopwatch/badges/gpa.svg)](https://codeclimate.com/github/songkick/promise-stopwatch) [![Test Coverage](https://codeclimate.com/github/songkick/promise-stopwatch/badges/coverage.svg)](https://codeclimate.com/github/songkick/promise-stopwatch/coverage)
 
 Mesure a Promise resolution duration using Performance API with fallback to `new Data()`.
 
