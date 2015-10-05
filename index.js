@@ -1,3 +1,4 @@
+/* globals performance */
 var factory = function (createExecutor) {
     return function (settings) {
         return function (fn) {
@@ -5,7 +6,7 @@ var factory = function (createExecutor) {
                 return new Promise(createExecutor(fn, settings));
             };
         };
-    }
+    };
 };
 
 module.exports = factory(function (fn, settings) {

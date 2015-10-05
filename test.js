@@ -11,12 +11,12 @@ Date.now = function() {
         return ++callCount * ONE_TICK;
     }
     return originalNow();
-}
+};
 
 var stopwatch = require('./index');
 
 function resolveAsync() {
-    return new Promise(function(resolve, reject){
+    return new Promise(function(resolve){
         setTimeout(function(){
             resolve('yay');
         }, 10);
@@ -34,7 +34,7 @@ function rejectAsync() {
 tap.test('it should resolve with the original resolution response and duration', function(t){
     t.plan(3);
     mock = true;
-    settings = {foo:'bar'}; // not used but we need to make sure they are passed
+     var settings = {foo:'bar'}; // not used but we need to make sure they are passed
     stopwatch(settings)(resolveAsync)().then(function(response){
         mock = false;
         t.equal(response.result, 'yay', 'original response was not returned');
@@ -60,7 +60,7 @@ tap.test('it should use performance.now when available', function(t){
         now: function(){
             return ++perfCallCount * ONE_TICK;
         }
-    }
+    };
     stopwatch()(resolveAsync)().then(function(response){
         t.equal(perfCallCount, 2, 'performance.now was not used');
         t.equal(response.result, 'yay', 'original result was not returned');
