@@ -1,7 +1,7 @@
 {
   "name": "@songkick/promise-stopwatch",
   "version": "0.0.0",
-  "description": "Mesure a Promise resolution duration using Performance API with fallback to `new Data()`",
+  "description": "Measure a Promise resolution duration using Performance API with fallback to `new Data()`",
   "main": "index.js",
   "scripts": {
     "test": "tap test.js --cov --coverage-report=lcov",
