@@ -3,7 +3,7 @@
 Measure a Promise resolution duration using Performance API with fallback to `new Data()`.
 
 ```js
-var stopwatch = require('promise-stopwatch');
+var stopwatch = require('@songkick/promise-stopwatch');
 function resolveInOneSec() {
   return new Promise(function(resolve, reject){
     setTimeout(function(){
